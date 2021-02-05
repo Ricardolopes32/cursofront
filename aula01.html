@@ -15,13 +15,17 @@
     <section>
     <h3 align="center">Olá eu sou jose ricardo siqueira lopes, sou estutande de linguagem de marcação html5,css3, e
         iniciando em linguagem de programação javascript. sejam bem vindos !</h3>
-        <img  src="img/capa.jpg" width="100%" height="400px">
+        <img id="capa" src="img/capa.jpg" width="100%" height="400px">
+        <button onclick="document.getElementById('capa').src='img/capa4.jpg'">Mudar 1</button>
+<button onclick="document.getElementById('capa').src='img/capa.jpg'">Mudar 2</button>
+<button onclick="document.getElementById('capa').src='img/capa3.jpg'">Mudar 3</button>
     <hr>
     <h3>exercicio 01 usando um botão para alterar o valor de um elemento html usando javascript</h3>
     <p id="teste"> O que javascript pode fazer?</p>
     <button type="button"
         onclick='document.getElementById("teste").innerHTML = "javascript pode alterar elementos em html!"'> Click
         !</button>
+        <p>Neste exemplo usei o "getElementByid" em um paragrafo com uma identificação assim que desparar o click o evento é ativado mudando o conteudo do paragrafo alterando texto.</p>
         <hr>
         <h3>Exercicio 02 trocar a imagem de um elemento usando javascript</h3>
         <p>Este é um exemplo de como javascript pode mudar valores de um elemento em html src(source) atributo de imagem</p>
@@ -31,7 +35,29 @@
         <img id="minha imagem" src="img/apagada.gif" style="width:100px"></button>
 
         <button onclick="document.getElementById('minha imagem').src='img/apagada.gif'">Desligar a lampada</button>
+        <p> Neste caso acima temos uma imagem com o mesmo identificador id, ativado por um evento no botao onclick. ligar a lampada e desligar a lampada.</p>
+<hr>
+<h3> Exercicio 03 Usando javascript para mudar as cores dos textos</h3>
+<h3 id="demo"> Olá, Mundo eu posso mudar de cor</h3>
+<button type="button" onclick="document.getElementById('demo'). style.color='red';">Mudar cor 1</button>
+<button type="button" onclick="document.getElementById('demo'). style.color='blue';">Mudar cor 2</button>
+<button type="button" onclick="document.getElementById('demo'). style.color='green';">Mudar cor 3</button>
+<button type="button" onclick="document.getElementById('demo'). style.color='purple';">Mudar cor 4</button>
+<p>Neste exemplo criei um paragrafo p  com id, e botões com a mesma id, e mudei o style.color</p>
+<hr>
 
+<h3>exercicio 04 mostrando e escondendo textos</h3>
+<h2 id="demo1"> eu sou capaz de mudar o conteudo de um elemento html,aparecer e desaparecer</h2>
+<button type="button" onclick="document.getElementById('demo1'). innerHTML='Estou atraz de coisas novas e seguras para mim'">Mudar texto</button>
+<button type="button" onclick="document.getElementById('demo1'). style.display='none';">apagar paragrafo</button>
+<button type="button" onclick="document.getElementById('demo1'). style.display='block';">Mostrar texto</button>
+<hr>
+<h3>exercicio 05 alterando imagens</h3>
+<img id="minha imagem1" src="img/capa3.jpg" style="width:300px"></button><br>
+<button onclick="document.getElementById('minha imagem1').src='img/capa2.jpg'">Mudar 1</button>
+<button onclick="document.getElementById('minha imagem1').src='img/capa.jpg'">Mudar 2</button>
+<button onclick="document.getElementById('minha imagem1').src='img/capa3.jpg'">Mudar 3</button>
+<hr>
     </section>
 </body>
 
